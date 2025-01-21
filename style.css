@@ -482,7 +482,6 @@ input:hover{
     flex-direction: column;
     border-radius: 16px;
     border: 1px solid #C7C7C7;
-    max-width: 246px;
     width: 100%;
     gap: 16px;
 }
@@ -683,6 +682,17 @@ textarea::placeholder {
 
 }
 
+@media screen and (max-width: 480px){
+    .middle-bottom-container {
+        flex-direction: column-reverse;
+    }
+
+    .additional-info-container {
+        flex-grow: 1;
+    }
+}
+
+
 @media screen and (max-width: 320px) {
     .header-container {
         flex-wrap: wrap;
@@ -695,5 +705,9 @@ textarea::placeholder {
     .click-buttons {
         all: unset;
         font-size: 12px;
+    }
+
+    .middle-bottom-container {
+        flex-direction: column-reverse;
     }
 }
