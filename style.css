@@ -432,6 +432,7 @@ input:hover{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 432px;
     width: 100%;
     border-radius: 16px;
     border: 1px solid #C7C7C7;
@@ -674,8 +675,28 @@ textarea::placeholder {
 
 }
 
+@media screen and (max-width: 640px) {
+
+    .middle-bottom-container {
+        flex-direction: column;
+    }
+
+    .additional-info-container {
+        flex-grow: 1;
+    }
+
+    .input-fill {
+        width: 99%;
+        height: 48px;
+    }
+}
+
 @media screen and (max-width: 481px){
 
+
+    .middle-bottom-container {
+        flex-direction: column;
+    }
 
     .additional-info-container {
         flex-grow: 1;
@@ -689,6 +710,10 @@ textarea::placeholder {
 
 
 @media screen and (max-width: 385px) {
+.main-container {
+    padding: 12px 16px;
+}
+
     .header-right-content {
         align-items: center;
         gap: 8px;
@@ -701,9 +726,7 @@ textarea::placeholder {
     }
 
     .middle-bottom-container {
-        display: flex;
         flex-direction: column-reverse;
-        gap: 24px;
     }
 
     .middle-top-container, .name-mail-container {
@@ -756,4 +779,6 @@ textarea::placeholder {
     .middle-bottom-container {
         flex-direction: column-reverse;
     }
+
+
 }
