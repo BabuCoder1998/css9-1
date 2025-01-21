@@ -640,7 +640,7 @@ textarea::placeholder {
     line-height: 20px;
 }
 
-/* Tablet responsive */
+/* Responsives */
 
 @media screen and (max-width: 1280px) {
     .side-bar-big-gap {
@@ -650,6 +650,7 @@ textarea::placeholder {
     .burger {
         display: flex;
     }
+
     .middle-top-container {
         flex-grow: 1;
         display: flex;
@@ -661,7 +662,6 @@ textarea::placeholder {
         display: flex;
         max-width: none;
         flex-direction: column;
-        
     }
 
     .middle-left-container {
@@ -672,7 +672,6 @@ textarea::placeholder {
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
-
 }
 
 @media screen and (max-width: 640px) {
@@ -693,7 +692,6 @@ textarea::placeholder {
 
 @media screen and (max-width: 481px){
 
-
     .middle-bottom-container {
         flex-direction: column;
     }
@@ -707,7 +705,6 @@ textarea::placeholder {
         height: 48px;
     }
 }
-
 
 @media screen and (max-width: 385px) {
 .main-container {
@@ -726,7 +723,7 @@ textarea::placeholder {
     }
 
     .middle-bottom-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .middle-top-container, .name-mail-container {
@@ -767,18 +764,9 @@ textarea::placeholder {
         line-height: 24px;
     }
 
-    .sec-basic-para {
-
-    }
-
     .click-buttons {
         all: unset;
         font-size: 12px;
     }
-
-    .middle-bottom-container {
-        flex-direction: column-reverse;
-    }
-
 
 }
